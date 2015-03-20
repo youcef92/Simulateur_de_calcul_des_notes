@@ -1,0 +1,2046 @@
+
+<!DOCTYPE HTML>
+<html>
+     <head> 
+     	
+     	   	 
+          <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        
+       <!-- Encodage de la page -->
+       
+          <meta charset="UTF-8" />
+     </head>
+     <body>     	
+		<aside>
+			
+		<!-- Liste des spécialité avec l'appel de la fonction changepromo avec les parametre qui sont les module,credits,coefficiant de chaque module -->
+		
+		<p id="maphoto"><a href=""></a></p>
+			<ul>
+				<li><a href="./mi_simu.html">MI</a></li>
+				<li><a href="./st_simu.html">ST</a></li>	
+				<li><a href="./sm_simu.html">SM</a></li>
+				
+			</ul>
+		</aside>
+           
+          <table id="tableprinciplace1">
+                <tr id="ligne2">
+                	
+                	<!-- Module crédit coefficiant de l'unité2 de semestre1 MI -->
+                	
+                    <p id="simu">Simulateur de calcul de moyenne/crédit</p>
+                    <p id="sem1">Semester 1 (SM)</p>
+                    <td rowspan="2"><h3>Unités</h3></td>
+                    <td rowspan="2"><h3>Matières</h3></td>
+                    <td rowspan="2"><h3>Coeff</h3></td>
+                    <td rowspan="2"><h3>Crédit</h3></td>
+                    <td id="champmoy" rowspan="2"><h3>Moyenne</h3></td>
+                    <td rowspan="2"><h3>Crédit Module</h3></td>
+                    <td rowspan="2"><h3>Moyenne UE</h3></td>
+                    <td rowspan="2"><h3>Crédit obtenu</h3></td>          
+               <tr id="ligne3">
+                     <tr>
+		               <td ROWSPAN=3><h3>UE Fondamentale<br/>Code:UEF11</br>Coefficient:9</br>Crédit:18</h3></td>
+		               <td id="module1">Mathématiques 1</td>
+		               <td id="coemodu1">3</td>
+		               <td id="cremodu1">6</td>
+		               <td id="moygrand"><input type="text" name="moymath1" id="moymodu1" onblur="testmoy1()"/></td>
+		               <td id="cregrand1">Champ Calculé</td> 
+
+		               <td rowspan=3 id="moyunité1">Champ Calculé</td>
+		               <td rowspan=3 id="créunité1">Champ Calculé</td>  
+	                </tr>
+	                    <td id="module2">Physique 1</td>
+	                    <td id="coemodu2">3</td>
+	                    <td id="cremodu2">6</td>
+	    	               <td id="moygrand"><input type="text" name="moyphy1" id="moymodu2" onblur="testmoy2()"/></td>
+	    	               <td id="cregrand2">Champ Calculé</TD>
+	                <tr>
+	                    <td id="module3">Chimie 1<br/></td>
+	                    <td id="coemodu3">3</td>
+	                    <td id="cremodu3">6</td>
+	    	            <td id="moygrand"><input type="text" name="moystr" id="moymodu3" onblur="testmoy3()"/></td>
+	    	            <td id="cregrand3">Champ Calculé</TD>
+	                </tr>
+                </tr>
+                <tr id="ligne4">
+                     <tr>
+                     	
+                     	<!-- Module crédit coefficiant de l'unité2 de semestre1 MI -->
+                     	
+		               <td ROWSPAN=3><h3>UE Méthodologique<br/>Code:UEM11</br>Coefficient:4</br> Crédit:8</h3></td>
+		               <td id="module4">TP  Mécanique</td>
+		               <td id="coemodu4">1</td>
+		               <td id="cremodu4">2</td>
+		               <td id="moygrand"><input type="text" name="moytpphy1" id="moymodu4" onblur="testmoy4()"/></td>
+	    	           <td id="cregrand4">Champ Calculé</td> 
+
+		               <td rowspan=4 id="moyunité2">Champ Calculé</td>
+		               <td rowspan=4 id="créunité2">Champ Calculé</td>    
+	                </tr>
+	                <tr>
+	                    <td id="module5">TP Chimie 1</td>
+	                    <td id="coemodu5">1</td>
+	                    <td id="cremodu5">2</td>
+	    	            <td id="moygrand"><input type="text"  name="moytpchi1" id="moymodu5" onblur="testmoy5()"/></td>
+	    	            <td id="cregrand5">Champ Calculé</TD>
+	    	        </tr>
+	    	        <tr> 	
+	    	            <td id="module6">Informatique 1</td>
+	                    <td id="coemodu6">2</td>
+	                    <td id="cremodu6">4</td>
+	    	            <td id="moygrand"><input type="text"  name="moyinfo1" id="moymodu6" onblur="testmoy6()"/></td>
+	    	            <td id="cregrand6">Champ Calculé</TD>
+	    	        </tr>
+	            </tr>
+	            <tr id="ligne5">
+                     <tr>
+                     	
+                     	<!-- Module crédit coefficiant de l'unité3 de semestre1 MI -->
+                     	
+		               <td ROWSPAN=1><h3>UE Découverte<br/>Code:UED11</br>Coefficient:1</br>Crédit:2</h3></td>
+		               <td id="module8">Environnement</td>
+		               <td id="coemodu8">1</td>
+		               <td id="cremodu8">2</td>
+		               <td id="moygrand"><input type="text" name="moymet1" id="moymodu8" onblur="testmoy8()"/></td>
+	    	           <td id="cregrand8">Champ Calculé</td> 
+	    	           
+					   <td rowspan=1 id="moyunité3">Champ Calculé</td>
+		               <td rowspan=1 id="créunité3">Champ Calculé</td>    
+	                </tr>
+               </tr>
+                <tr id="ligne6">
+                     <tr>
+                     	<!-- Module crédit coefficiant de l'unité2 de semestre1 MI -->
+                     	
+		               <td ROWSPAN=2><h3>UE Transversale<br/>Code:UEM11</br>Coefficient:1</br> Crédit:2</h3></td>
+		               <td id="module9">Langue anglaise 1</td>
+		               <td id="coemodu9">1</td>
+		               <td id="cremodu9">2</td>
+		               <td id="moygrand"><input type="text" name="moyfran" id="moymodu9" onblur="testmoy9()"/></td>
+	    	           <td id="cregrand9">Champ Calculé</td> 
+
+		               <td rowspan=2 id="moyunité4">Champ Calculé</td>
+		               <td rowspan=2 id="créunité4">Champ Calculé</td>    
+	                </tr>              
+               </tr>
+               </br>
+          </table>
+          
+        <!-- Tableau de semestre2 de MI -->
+        
+<table id="tableprinciplace2">
+                <tr id="ligne2">
+                	
+                	<!-- Module crédit coefficiant de l'unité2 de semestre1 MI -->
+                	
+                    <p id="sem1">Semester 2 (SM)</p>
+                    <td rowspan="2"><h3>Unités</h3></td>
+                    <td rowspan="2"><h3>Matières</h3></td>
+                    <td rowspan="2"><h3>Coeff</h3></td>
+                    <td rowspan="2"><h3>Crédit</h3></td>
+                    <td id="champmoy" rowspan="2"><h3>Moyenne</h3></td>
+                    <td rowspan="2"><h3>Crédit Module</h3></td>
+                    <td rowspan="2"><h3>Moyenne UE</h3></td>
+                    <td rowspan="2"><h3>Crédit obtenu</h3></td>          
+               <tr id="ligne3">
+                     <tr>
+		               <td ROWSPAN=3><h3>UE Fondamentale<br/>Code:UEF11</br>Coefficient:9</br>Crédit:18</h3></td>
+		               <td id="module11">Mathématiques 2</td>
+		               <td id="coemodu11">3</td>
+		               <td id="cremodu11">6</td>
+		               <td id="moygrand"><input type="text" name="moymath2" id="moymodu11" onblur="testmoy11()"/></td>
+		               <td id="cregrand11">Champ Calculé</td> 
+
+		               <td rowspan=3 id="moyunité5">Champ Calculé</td>
+		               <td rowspan=3 id="créunité5">Champ Calculé</td>  
+	                </tr>
+	                    <td id="module12">Physique 2</td>
+	                    <td id="coemodu12">3</td>
+	                    <td id="cremodu12">6</td>
+	    	               <td id="moygrand"><input type="text" name="moyphy2" id="moymodu12" onblur="testmoy12()"/></td>
+	    	               <td id="cregrand12">Champ Calculé</TD>
+	                <tr>
+	                    <td id="module13">Chimie 2<br/></td>
+	                    <td id="coemodu13">3</td>
+	                    <td id="cremodu13">6</td>
+	    	            <td id="moygrand"><input type="text" name="moyter" id="moymodu13" onblur="testmoy13()"/></td>
+	    	            <td id="cregrand13">Champ Calculé</TD>
+	                </tr>
+                </tr>
+                <tr id="ligne4">
+                     <tr>
+                     	
+                     	<!-- Module crédit coefficiant de l'unité2 de semestre1 MI -->
+                     	
+		               <td ROWSPAN=3><h3>UE Méthodologique<br/>Code:UEM11</br>Coefficient:4</br> Crédit:8</h3></td>
+		               <td id="module14">TP Electricité</td>
+		               <td id="coemodu14">1</td>
+		               <td id="cremodu14">2</td>
+		               <td id="moygrand"><input type="text" name="moytpphy2" id="moymodu14" onblur="testmoy14()"/></td>
+	    	           <td id="cregrand14">Champ Calculé</td> 
+
+		               <td rowspan=4 id="moyunité6">Champ Calculé</td>
+		               <td rowspan=4 id="créunité6">Champ Calculé</td>    
+	                </tr>
+	                <tr>
+	                    <td id="module15">TP Chimie 2</td>
+	                    <td id="coemodu15">1</td>
+	                    <td id="cremodu15">2</td>
+	    	            <td id="moygrand"><input type="text"  name="moytpchi2" id="moymodu15" onblur="testmoy15()"/></td>
+	    	            <td id="cregrand15">Champ Calculé</TD>
+	    	        </tr>
+	    	        <tr> 	
+	    	            <td id="module16">Informatique 2</td>
+	                    <td id="coemodu16">2</td>
+	                    <td id="cremodu16">4</td>
+	    	            <td id="moygrand"><input type="text"  name="moyinfo2" id="moymodu16" onblur="testmoy16()"/></td>
+	    	            <td id="cregrand16">Champ Calculé</TD>
+	    	        </tr>
+	            </tr>
+	            <tr id="ligne5">
+                     <tr>
+                     	
+                     	<!-- Module crédit coefficiant de l'unité3 de semestre1 MI -->
+                     	
+		               <td ROWSPAN=1><h3>UE Découverte<br/>Code:UED11</br>Coefficient:2</br>Crédit:1</h3></td>
+		               <td id="module18">Histoire de Sciences</td>
+		               <td id="coemodu18">1</td>
+		               <td id="cremodu18">2</td>
+		               <td id="moygrand"><input type="text" name="moymet2" id="moymodu18" onblur="testmoy18()"/></td>
+	    	           <td id="cregrand18">Champ Calculé</td> 
+	    	           
+					   <td rowspan=1 id="moyunité7">Champ Calculé</td>
+		               <td rowspan=1 id="créunité7">Champ Calculé</td>    
+	                </tr>
+               </tr>
+                <tr id="ligne6">
+                     <tr>
+                     	<!-- Module crédit coefficiant de l'unité2 de semestre1 MI -->
+                     	
+		               <td ROWSPAN=2><h3>UE Transversale<br/>Code:UEM11</br>Coefficient:1</br> Crédit:2</h3></td>
+		               <td id="module19">Langue anglaise 2</td>
+		               <td id="coemodu19">1</td>
+		               <td id="cremodu19">2</td>
+		               <td id="moygrand"><input type="text" name="moyfran2" id="moymodu19" onblur="testmoy19()"/></td>
+	    	           <td id="cregrand19">Champ Calculé</td> 
+
+		               <td rowspan=2 id="moyunité8">Champ Calculé</td>
+		               <td rowspan=2 id="créunité8">Champ Calculé</td>    
+	                </tr>               
+               </tr>
+               </br>
+          </table>
+          
+          <div style="margin-top: -380px">
+			<ul>
+			     <li><td id="moysem1">Moyenne semestre1</td></li>
+				<li><a id="affmoysem1">0</a></li>
+				
+				<li><td id="moysem2">Moyenne semestre2</td></li>
+				<li><a id="affmoysem2">0</a></li>
+				
+				<li><td id="cresem1">crédit</br>semestre1</td></li>
+				<li><a id="valcresem1">0</a></li>
+	
+				<li><td id="cresem2">crédit</br>semestre2</td></li>
+				<li><a id="valcresem2">0</a></li>
+								
+			     <li><td rowspan="2" id="moytot">Moyenne </br>géneral</td></li>
+			     <li><a id="valmoytot">0</a></li>	
+			     							
+				<li><td id="cretot">Crédit</br> géneral</td></li>
+				<li><a id="valcretot">0</a></li>
+				
+			</ul>
+          </div>
+          <p style="margin-top: -80px" id="observation">Décision:<td id"décision">Saisir vos notes S.V.P</td></p>
+          <p style="margin-top: -50px" id="modudett">Modules en dettes: <td id="modett">Saisir vos notes S.V.P</td></p>
+
+     	<script type="text/javascript">
+     	
+     	/* BY 
+     	 * MAHDJOUB YOUCEF
+     	 * MAIL:youcef92@live.fr
+     	 * 		mahdjoub.youcef92@gmail.com
+     	 * 		youcef92@programmer.net
+     	 * TEL:(+213)0668836061
+     	 * 2014/2015
+     	 */
+
+		
+		function testmoy1 () {
+		tst=parseFloat(document.getElementById("moymodu1").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu1");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu1=parseFloat(document.getElementById("cremodu1").textContent);
+		cobmod1=document.getElementById("cregrand1").firstChild.nodeValue=0;
+		
+		oui1=0;
+		
+		/*si la valeur de moyenne de module 1 est faux nous inialisons les champs de moyenne semetre1, credit semetre 2 moyenne de l'unité 1, le crédit totale,et le moynne totale'*/
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu1=parseFloat(document.getElementById("cremodu1").textContent);
+		cobmod1=document.getElementById("cregrand1").firstChild.nodeValue=cmodu1;
+		}
+		
+		if(tst<10){
+		cmodu1=parseFloat(document.getElementById("cremodu1").textContent);
+		cobmod1=document.getElementById("cregrand1").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu1");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu1=document.getElementById("coemodu1").textContent;
+		moymodu1=parseFloat(mmodu1)*tst;
+
+		oui1=1;
+		
+		if(oui1==1)
+					{if(oui2==1)
+								{if(oui3==1){
+									coe1=parseFloat(document.getElementById("coemodu1").textContent);
+		    						coe2=parseFloat(document.getElementById("coemodu2").textContent);
+		    						coe3=parseFloat(document.getElementById("coemodu3").textContent);
+		    						document.getElementById("moyunité1").firstChild.nodeValue=((moymodu1+moymodu2+moymodu3)/(coe1+coe2+coe3)).toFixed(3);
+		    						cre1=parseFloat(document.getElementById("cregrand1").textContent);
+		    						cre2=parseFloat(document.getElementById("cregrand2").textContent);
+		    						cre3=parseFloat(document.getElementById("cregrand3").textContent);
+		    						document.getElementById("créunité1").firstChild.nodeValue=cre1+cre2+cre3;
+									
+								}}}
+		crtot1=((moymodu1+moymodu2+moymodu3)/(coe1+coe2+coe3)).toFixed(3);
+		if(crtot1>=10) document.getElementById("créunité1").firstChild.nodeValue=cmodu1+cmodu2+cmodu3;
+
+		affmoysem1();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu1");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu1=parseFloat(document.getElementById("cremodu1").textContent);
+		cobmod1=document.getElementById("cregrand1").firstChild.nodeValue=0;	
+		oui1=0;
+		
+		/*si la valeur de moyenne de module 1 est faux nous inialisons les champs de moyenne semetre1, credit semetre 2 moyenne de l'unité 1, le crédit totale,et le moynne totale'*/
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu1").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu1=parseFloat(document.getElementById("cremodu1").textContent);
+		cobmod1=document.getElementById("cregrand1").firstChild.nodeValue="";
+
+		oui1=0;
+		
+		
+		/*si la valeur de moyenne de module 1 est faux nous inialisons les champs de moyenne semetre1, credit semetre 2 moyenne de l'unité 1, le crédit totale,et le moynne totale'*/
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+
+		function testmoy2 () {
+		tst=parseFloat(document.getElementById("moymodu2").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu2");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu2=parseFloat(document.getElementById("cremodu2").textContent);
+		cobmod2=document.getElementById("cregrand2").firstChild.nodeValue=0;
+		
+		oui2=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu2=parseFloat(document.getElementById("cremodu2").textContent);
+		cobmod2=document.getElementById("cregrand2").firstChild.nodeValue=cmodu2;
+		}
+		
+		if(tst<10){
+		cmodu2=parseFloat(document.getElementById("cremodu2").textContent);
+		cobmod2=document.getElementById("cregrand2").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu2");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu2=document.getElementById("coemodu2").textContent;
+		moymodu2=parseFloat(mmodu2)*tst;
+
+		oui2=1;
+		
+		if(oui1==1)
+					{if(oui2==1)
+								{if(oui3==1){
+									coe1=parseFloat(document.getElementById("coemodu1").textContent);
+		    						coe2=parseFloat(document.getElementById("coemodu2").textContent);
+		    						coe3=parseFloat(document.getElementById("coemodu3").textContent);
+		    						document.getElementById("moyunité1").firstChild.nodeValue=((moymodu1+moymodu2+moymodu3)/(coe1+coe2+coe3)).toFixed(3);
+		    						
+		    						cre1=parseFloat(document.getElementById("cregrand1").textContent);
+		    						cre2=parseFloat(document.getElementById("cregrand2").textContent);
+		    						cre3=parseFloat(document.getElementById("cregrand3").textContent);
+		    						document.getElementById("créunité1").firstChild.nodeValue=cre1+cre2+cre3;
+									
+								}}}
+		crtot1=((moymodu1+moymodu2+moymodu3)/(coe1+coe2+coe3)).toFixed(3);
+		if(crtot1>=10) document.getElementById("créunité1").firstChild.nodeValue=cmodu1+cmodu2+cmodu3;
+		
+		affmoysem1();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu2");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu2=parseFloat(document.getElementById("cremodu2").textContent);
+		cobmod2=document.getElementById("cregrand2").firstChild.nodeValue=0;	
+		oui2=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu2").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu2=parseFloat(document.getElementById("cremodu2").textContent);
+		cobmod2=document.getElementById("cregrand2").firstChild.nodeValue="";
+
+		oui2=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy3 () {
+		tst=parseFloat(document.getElementById("moymodu3").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu3");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu3=parseFloat(document.getElementById("cremodu3").textContent);
+		cobmod3=document.getElementById("cregrand3").firstChild.nodeValue=0;
+		
+		oui3=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu3=parseFloat(document.getElementById("cremodu3").textContent);
+		cobmod3=document.getElementById("cregrand3").firstChild.nodeValue=cmodu3;
+		}
+		
+		if(tst<10){
+		cmodu3=parseFloat(document.getElementById("cremodu3").textContent);
+		cobmod3=document.getElementById("cregrand3").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu3");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu3=document.getElementById("coemodu3").textContent;
+		moymodu3=parseFloat(mmodu3)*tst;
+
+		oui3=1;
+		
+		if(oui1==1)
+					{if(oui2==1)
+								{if(oui3==1){
+									coe1=parseFloat(document.getElementById("coemodu1").textContent);
+		    						coe2=parseFloat(document.getElementById("coemodu2").textContent);
+		    						coe3=parseFloat(document.getElementById("coemodu3").textContent);
+		    						document.getElementById("moyunité1").firstChild.nodeValue=((moymodu1+moymodu2+moymodu3)/(coe1+coe2+coe3)).toFixed(3);
+		    						
+		    						cre1=parseFloat(document.getElementById("cregrand1").textContent);
+		    						cre2=parseFloat(document.getElementById("cregrand2").textContent);
+		    						cre3=parseFloat(document.getElementById("cregrand3").textContent);
+		    						document.getElementById("créunité1").firstChild.nodeValue=cre1+cre2+cre3;
+									
+								}}}
+		crtot1=((moymodu1+moymodu2+moymodu3)/(coe1+coe2+coe3)).toFixed(3);
+		if(crtot1>=10) document.getElementById("créunité1").firstChild.nodeValue=cmodu1+cmodu2+cmodu3;
+		
+		affmoysem1();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu3");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu3=parseFloat(document.getElementById("cremodu3").textContent);
+		cobmod3=document.getElementById("cregrand3").firstChild.nodeValue=0;	
+		oui3=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu3").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu3=parseFloat(document.getElementById("cremodu3").textContent);
+		cobmod3=document.getElementById("cregrand3").firstChild.nodeValue="";
+
+		oui3=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";		
+		document.getElementById("moyunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité1").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy4 () {
+		tst=parseFloat(document.getElementById("moymodu4").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu4");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu4=parseFloat(document.getElementById("cremodu4").textContent);
+		cobmod4=document.getElementById("cregrand4").firstChild.nodeValue=0;
+		
+		oui4=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu4=parseFloat(document.getElementById("cremodu4").textContent);
+		cobmod4=document.getElementById("cregrand4").firstChild.nodeValue=cmodu4;
+		}
+		
+		if(tst<10){
+		cmodu4=parseFloat(document.getElementById("cremodu4").textContent);
+		cobmod4=document.getElementById("cregrand4").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu4");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu4=document.getElementById("coemodu4").textContent;
+		moymodu4=parseFloat(mmodu4)*tst;
+
+		oui4=1;
+		
+		if(oui4==1)
+					{if(oui5==1){
+								if(oui6==1){
+											
+								
+									coe4=parseFloat(document.getElementById("coemodu4").textContent);
+		    						coe5=parseFloat(document.getElementById("coemodu5").textContent);
+		    						coe6=parseFloat(document.getElementById("coemodu6").textContent);
+
+		    						document.getElementById("moyunité2").firstChild.nodeValue=((moymodu4+moymodu5+moymodu6)/(coe4+coe5+coe6)).toFixed(3);
+		    						
+		    						cre4=parseFloat(document.getElementById("cregrand4").textContent);
+		    						cre5=parseFloat(document.getElementById("cregrand5").textContent);
+		    						cre6=parseFloat(document.getElementById("cregrand6").textContent);
+		    						
+		    						document.getElementById("créunité2").firstChild.nodeValue=cre4+cre5+cre6;
+								}}}
+		crtot2=((moymodu4+moymodu5+moymodu6)/(coe4+coe5+coe6)).toFixed(3);
+		if(crtot2>=10) document.getElementById("créunité2").firstChild.nodeValue=cmodu4+cmodu5+cmodu6;
+		
+		affmoysem1();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu4");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu4=parseFloat(document.getElementById("cremodu4").textContent);
+		cobmod4=document.getElementById("cregrand4").firstChild.nodeValue=0;	
+		oui4=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu4").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu4=parseFloat(document.getElementById("cremodu4").textContent);
+		cobmod4=document.getElementById("cregrand4").firstChild.nodeValue="";
+
+		oui4=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy5 () {
+		tst=parseFloat(document.getElementById("moymodu5").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu5");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu5=parseFloat(document.getElementById("cremodu5").textContent);
+		cobmod5=document.getElementById("cregrand5").firstChild.nodeValue=0;
+		
+		oui5=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu5=parseFloat(document.getElementById("cremodu5").textContent);
+		cobmod5=document.getElementById("cregrand5").firstChild.nodeValue=cmodu5;
+		}
+		
+		if(tst<10){
+		cmodu5=parseFloat(document.getElementById("cremodu5").textContent);
+		cobmod5=document.getElementById("cregrand5").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu5");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu5=document.getElementById("coemodu5").textContent;
+		moymodu5=parseFloat(mmodu5)*tst;
+
+		oui5=1;
+		
+		if(oui4==1)
+					{if(oui5==1){
+								if(oui6==1){
+								
+									coe4=parseFloat(document.getElementById("coemodu4").textContent);
+		    						coe5=parseFloat(document.getElementById("coemodu5").textContent);
+		    						coe6=parseFloat(document.getElementById("coemodu6").textContent);
+
+		    						document.getElementById("moyunité2").firstChild.nodeValue=((moymodu4+moymodu5+moymodu6)/(coe4+coe5+coe6)).toFixed(3);
+		    						
+		    						cre4=parseFloat(document.getElementById("cregrand4").textContent);
+		    						cre5=parseFloat(document.getElementById("cregrand5").textContent);
+		    						cre6=parseFloat(document.getElementById("cregrand6").textContent);
+		    						
+		    						document.getElementById("créunité2").firstChild.nodeValue=cre4+cre5+cre6;
+								}}}
+		crtot2=((moymodu4+moymodu5+moymodu6)/(coe4+coe5+coe6)).toFixed(3);
+		if(crtot2>=10) document.getElementById("créunité2").firstChild.nodeValue=cmodu4+cmodu5+cmodu6;
+		
+		affmoysem1();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu5");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu5=parseFloat(document.getElementById("cremodu5").textContent);
+		cobmod5=document.getElementById("cregrand5").firstChild.nodeValue=0;	
+		oui5=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu5").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu5=parseFloat(document.getElementById("cremodu5").textContent);
+		cobmod5=document.getElementById("cregrand5").firstChild.nodeValue="";
+
+		oui5=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+				
+		function testmoy6 () {
+		tst=parseFloat(document.getElementById("moymodu6").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu6");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu6=parseFloat(document.getElementById("cremodu6").textContent);
+		cobmod6=document.getElementById("cregrand6").firstChild.nodeValue=0;
+		
+		oui6=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu6=parseFloat(document.getElementById("cremodu6").textContent);
+		cobmod6=document.getElementById("cregrand6").firstChild.nodeValue=cmodu6;
+		}
+		
+		if(tst<10){
+		cmodu6=parseFloat(document.getElementById("cremodu6").textContent);
+		cobmod6=document.getElementById("cregrand6").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu6");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu6=document.getElementById("coemodu6").textContent;
+		moymodu6=parseFloat(mmodu6)*tst;
+
+		oui6=1;
+
+		if(oui4==1)
+					{if(oui5==1){
+								if(oui6==1){
+								
+									coe4=parseFloat(document.getElementById("coemodu4").textContent);
+		    						coe5=parseFloat(document.getElementById("coemodu5").textContent);
+		    						coe6=parseFloat(document.getElementById("coemodu6").textContent);
+
+		    						document.getElementById("moyunité2").firstChild.nodeValue=((moymodu4+moymodu5+moymodu6)/(coe4+coe5+coe6)).toFixed(3);
+		    						
+		    						cre4=parseFloat(document.getElementById("cregrand4").textContent);
+		    						cre5=parseFloat(document.getElementById("cregrand5").textContent);
+		    						cre6=parseFloat(document.getElementById("cregrand6").textContent);
+		    						
+		    						document.getElementById("créunité2").firstChild.nodeValue=cre4+cre5+cre6;
+								}}}
+		crtot2=((moymodu4+moymodu5+moymodu6)/(coe4+coe5+coe6)).toFixed(3);
+		if(crtot2>=10) document.getElementById("créunité2").firstChild.nodeValue=cmodu4+cmodu5+cmodu6;
+		
+		affmoysem1();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu6");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu6=parseFloat(document.getElementById("cremodu6").textContent);
+		cobmod6=document.getElementById("cregrand6").firstChild.nodeValue=0;	
+		oui6=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu6").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu6=parseFloat(document.getElementById("cremodu6").textContent);
+		cobmod6=document.getElementById("cregrand6").firstChild.nodeValue="";
+
+		oui6=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité2").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy8 () {
+		tst=parseFloat(document.getElementById("moymodu8").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu8");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu8=parseFloat(document.getElementById("cremodu8").textContent);
+		cobmod8=document.getElementById("cregrand8").firstChild.nodeValue=0;
+		
+		oui8=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité3").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité3").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu8=parseFloat(document.getElementById("cremodu8").textContent);
+		cobmod8=document.getElementById("cregrand8").firstChild.nodeValue=cmodu8;
+		}
+		
+		if(tst<10){
+		cmodu8=parseFloat(document.getElementById("cremodu8").textContent);
+		cobmod8=document.getElementById("cregrand8").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu8");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu8=document.getElementById("coemodu8").textContent;
+		moymodu8=parseFloat(mmodu8)*tst;
+
+		oui8=1;
+		
+		if(oui8==1){
+						coe8=parseFloat(document.getElementById("coemodu8").textContent);
+		    			document.getElementById("moyunité3").firstChild.nodeValue=((moymodu8)/(coe8)).toFixed(3);
+		    						
+		    			cre8=parseFloat(document.getElementById("cregrand8").textContent);
+		    			document.getElementById("créunité3").firstChild.nodeValue=cre8;
+					}
+		crtot3=((moymodu8)/(coe8)).toFixed(3);
+		if(crtot3>=10) document.getElementById("créunité3").firstChild.nodeValue=cmodu8;
+		
+		affmoysem1();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu8");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu8=parseFloat(document.getElementById("cremodu8").textContent);
+		cobmod8=document.getElementById("cregrand8").firstChild.nodeValue=0;	
+		oui8=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité3").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité3").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu8").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu8=parseFloat(document.getElementById("cremodu8").textContent);
+		cobmod8=document.getElementById("cregrand8").firstChild.nodeValue="";
+
+		oui8=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité3").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité3").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy9 () {
+		tst=parseFloat(document.getElementById("moymodu9").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu9");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu9=parseFloat(document.getElementById("cremodu9").textContent);
+		cobmod9=document.getElementById("cregrand9").firstChild.nodeValue=0;
+		
+		oui9=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité4").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité4").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu9=parseFloat(document.getElementById("cremodu9").textContent);
+		cobmod9=document.getElementById("cregrand9").firstChild.nodeValue=cmodu9;
+		}
+		
+		if(tst<10){
+		cmodu9=parseFloat(document.getElementById("cremodu9").textContent);
+		cobmod9=document.getElementById("cregrand9").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu9");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu9=document.getElementById("coemodu9").textContent;
+		moymodu9=parseFloat(mmodu9)*tst;
+
+		oui9=1;
+		
+		if(oui9==1)
+					{
+									coe9=parseFloat(document.getElementById("coemodu9").textContent);
+		    						
+		    						document.getElementById("moyunité4").firstChild.nodeValue=((moymodu9)/(coe9)).toFixed(3);
+		    						
+		    						cre9=parseFloat(document.getElementById("cregrand9").textContent);
+		    						
+		    						document.getElementById("créunité4").firstChild.nodeValue=cre9;	
+								}
+		crtot4=((moymodu9)/(coe9)).toFixed(3);
+		if(crtot4>=10) document.getElementById("créunité4").firstChild.nodeValue=cmodu9;
+		
+		affmoysem1();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu9");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu9=parseFloat(document.getElementById("cremodu9").textContent);
+		cobmod9=document.getElementById("cregrand9").firstChild.nodeValue=0;	
+		oui9=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité4").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité4").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu9").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu9=parseFloat(document.getElementById("cremodu9").textContent);
+		cobmod9=document.getElementById("cregrand9").firstChild.nodeValue="";
+
+		oui9=0;
+		
+		document.getElementById("affmoysem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem1").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité4").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité4").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+			
+		function affmoysem1 () {
+			
+			if(oui1==1 && oui2==1 && oui3==1 && oui4==1 && oui5==1 && oui6==1 && oui8==1 && oui9==1){
+			
+			coe1=parseFloat(document.getElementById("coemodu1").textContent);
+		    coe2=parseFloat(document.getElementById("coemodu2").textContent);
+		    coe3=parseFloat(document.getElementById("coemodu3").textContent);
+		    coe4=parseFloat(document.getElementById("coemodu4").textContent);
+		    coe5=parseFloat(document.getElementById("coemodu5").textContent);
+		    coe6=parseFloat(document.getElementById("coemodu6").textContent);
+		    
+		    coe8=parseFloat(document.getElementById("coemodu8").textContent);
+		    coe9=parseFloat(document.getElementById("coemodu9").textContent);
+
+		    
+			coegenerale=coe1+coe2+coe3+coe4+coe5+coe6+coe8+coe9;
+			
+			moyennesem1=Math.round(moymodu1+moymodu2+moymodu3+moymodu4+moymodu5+moymodu6+moymodu8+moymodu9)/coegenerale;
+
+		    stl=document.getElementById("affmoysem1");
+			
+			document.getElementById("affmoysem1").firstChild.nodeValue=moyennesem1.toFixed(3);
+			
+			if(moyennesem1>=10) document.getElementById("valcresem1").firstChild.nodeValue=30;
+
+			else{
+				creobgenerale=cobmod1+cobmod2+cobmod3+cobmod4+cobmod5+cobmod6+cobmod8+cobmod9;
+				document.getElementById("valcresem1").firstChild.nodeValue=creobgenerale;
+			}
+			
+		} 
+		
+		}
+		
+		
+		function testmoy11 () {
+		tst=parseFloat(document.getElementById("moymodu11").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu11");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu11=parseFloat(document.getElementById("cremodu11").textContent);
+		cobmod11=document.getElementById("cregrand11").firstChild.nodeValue=0;
+		
+		oui11=0;
+		
+		/*si la valeur de moyenne de module 1 est faux nous inialisons les champs de moyenne semetre1, credit semetre 2 moyenne de l'unité 1, le crédit totale,et le moynne totale'*/
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu11=parseFloat(document.getElementById("cremodu11").textContent);
+		cobmod11=document.getElementById("cregrand11").firstChild.nodeValue=cmodu11;
+		}
+		
+		if(tst<10){
+		cmodu11=parseFloat(document.getElementById("cremodu11").textContent);
+		cobmod11=document.getElementById("cregrand11").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu11");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu11=document.getElementById("coemodu11").textContent;
+		moymodu11=parseFloat(mmodu11)*tst;
+
+		oui11=1;
+
+		if(oui11==1)
+					{if(oui12==1)
+								{if(oui13==1){
+									coe11=parseFloat(document.getElementById("coemodu11").textContent);
+		    						coe12=parseFloat(document.getElementById("coemodu12").textContent);
+		    						coe13=parseFloat(document.getElementById("coemodu13").textContent);
+		    						
+		    						document.getElementById("moyunité5").firstChild.nodeValue=((moymodu11+moymodu12+moymodu13)/(coe11+coe12+coe13)).toFixed(3);
+		    						cre1=parseFloat(document.getElementById("cregrand11").textContent);
+		    						cre2=parseFloat(document.getElementById("cregrand12").textContent);
+		    						cre3=parseFloat(document.getElementById("cregrand13").textContent);
+		    						document.getElementById("créunité5").firstChild.nodeValue=cre11+cre12+cre13;
+									
+								}}}
+		crtot5=((moymodu11+moymodu12+moymodu13)/(coe11+coe12+coe13)).toFixed(3);
+		if(crtot5>=10) document.getElementById("créunité5").firstChild.nodeValue=cmodu11+cmodu12+cmodu13;
+
+		affmoysem2();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu5");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu11=parseFloat(document.getElementById("cremodu5").textContent);
+		cobmod11=document.getElementById("cregrand5").firstChild.nodeValue=0;	
+		oui11=0;
+		
+		/*si la valeur de moyenne de module 1 est faux nous inialisons les champs de moyenne semetre1, credit semetre 2 moyenne de l'unité 1, le crédit totale,et le moynne totale'*/
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu11").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu1=parseFloat(document.getElementById("cremodu11").textContent);
+		cobmod1=document.getElementById("cregrand11").firstChild.nodeValue="";
+
+		oui11=0;
+		
+		
+		/*si la valeur de moyenne de module 1 est faux nous inialisons les champs de moyenne semetre1, credit semetre 2 moyenne de l'unité 1, le crédit totale,et le moynne totale'*/
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+
+		function testmoy12 () {
+		tst=parseFloat(document.getElementById("moymodu12").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu12");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu12=parseFloat(document.getElementById("cremodu12").textContent);
+		cobmod12=document.getElementById("cregrand12").firstChild.nodeValue=0;
+		
+		oui12=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu12=parseFloat(document.getElementById("cremodu12").textContent);
+		cobmod12=document.getElementById("cregrand12").firstChild.nodeValue=cmodu12;
+		}
+		
+		if(tst<10){
+		cmodu12=parseFloat(document.getElementById("cremodu12").textContent);
+		cobmod12=document.getElementById("cregrand12").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu12");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu12=document.getElementById("coemodu12").textContent;
+		moymodu12=parseFloat(mmodu12)*tst;
+
+		oui12=1;
+		
+		if(oui11==1)
+					{if(oui12==1)
+								{if(oui13==1){
+									coe11=parseFloat(document.getElementById("coemodu11").textContent);
+		    						coe12=parseFloat(document.getElementById("coemodu12").textContent);
+		    						coe13=parseFloat(document.getElementById("coemodu13").textContent);
+		    						document.getElementById("moyunité5").firstChild.nodeValue=((moymodu11+moymodu12+moymodu13)/(coe11+coe12+coe13)).toFixed(3);
+		    						
+		    						cre11=parseFloat(document.getElementById("cregrand11").textContent);
+		    						cre12=parseFloat(document.getElementById("cregrand12").textContent);
+		    						cre13=parseFloat(document.getElementById("cregrand13").textContent);
+		    						document.getElementById("créunité5").firstChild.nodeValue=cre11+cre12+cre13;
+									
+								}}}
+		crtot5=((moymodu11+moymodu12+moymodu13)/(coe11+coe12+coe13)).toFixed(3);
+		if(crtot5>=10) document.getElementById("créunité5").firstChild.nodeValue=cmodu11+cmodu12+cmodu13;
+		
+		affmoysem2();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu12");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu12=parseFloat(document.getElementById("cremodu12").textContent);
+		cobmod12=document.getElementById("cregrand12").firstChild.nodeValue=0;	
+		oui12=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu12").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu12=parseFloat(document.getElementById("cremodu12").textContent);
+		cobmod12=document.getElementById("cregrand12").firstChild.nodeValue="";
+
+		oui12=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy13 () {
+		tst=parseFloat(document.getElementById("moymodu13").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu13");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu13=parseFloat(document.getElementById("cremodu13").textContent);
+		cobmod13=document.getElementById("cregrand13").firstChild.nodeValue=0;
+		
+		oui13=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu13=parseFloat(document.getElementById("cremodu13").textContent);
+		cobmod13=document.getElementById("cregrand13").firstChild.nodeValue=cmodu13;
+		}
+		
+		if(tst<10){
+		cmodu13=parseFloat(document.getElementById("cremodu13").textContent);
+		cobmod13=document.getElementById("cregrand13").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu13");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu13=document.getElementById("coemodu13").textContent;
+		moymodu13=parseFloat(mmodu13)*tst;
+
+		oui13=1;
+		
+		if(oui11==1)
+					{if(oui12==1)
+								{if(oui13==1){
+									coe11=parseFloat(document.getElementById("coemodu11").textContent);
+		    						coe12=parseFloat(document.getElementById("coemodu12").textContent);
+		    						coe13=parseFloat(document.getElementById("coemodu13").textContent);
+		    						document.getElementById("moyunité5").firstChild.nodeValue=((moymodu11+moymodu12+moymodu13)/(coe11+coe12+coe13)).toFixed(3);
+		    						
+		    						cre11=parseFloat(document.getElementById("cregrand11").textContent);
+		    						cre12=parseFloat(document.getElementById("cregrand12").textContent);
+		    						cre13=parseFloat(document.getElementById("cregrand13").textContent);
+		    						document.getElementById("créunité5").firstChild.nodeValue=cre11+cre12+cre13;
+									
+								}}}
+		crtot5=((moymodu11+moymodu12+moymodu13)/(coe11+coe12+coe13)).toFixed(3);
+		if(crtot5>=10) document.getElementById("créunité5").firstChild.nodeValue=cmodu11+cmodu12+cmodu13;
+		
+		affmoysem2();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu13");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu13=parseFloat(document.getElementById("cremodu13").textContent);
+		cobmod13=document.getElementById("cregrand13").firstChild.nodeValue=0;	
+		oui13=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu13").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu13=parseFloat(document.getElementById("cremodu13").textContent);
+		cobmod13=document.getElementById("cregrand13").firstChild.nodeValue="";
+
+		oui13=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";		
+		document.getElementById("moyunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité5").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy14 () {
+		tst=parseFloat(document.getElementById("moymodu14").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu14");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu14=parseFloat(document.getElementById("cremodu14").textContent);
+		cobmod14=document.getElementById("cregrand14").firstChild.nodeValue=0;
+		
+		oui14=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu14=parseFloat(document.getElementById("cremodu14").textContent);
+		cobmod14=document.getElementById("cregrand14").firstChild.nodeValue=cmodu14;
+		}
+		
+		if(tst<10){
+		cmodu14=parseFloat(document.getElementById("cremodu14").textContent);
+		cobmod14=document.getElementById("cregrand14").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu14");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu14=document.getElementById("coemodu14").textContent;
+		moymodu14=parseFloat(mmodu14)*tst;
+
+		oui14=1;
+		
+		if(oui14==1)
+					{if(oui15==1){
+								if(oui16==1){
+											
+									coe14=parseFloat(document.getElementById("coemodu14").textContent);
+		    						coe15=parseFloat(document.getElementById("coemodu15").textContent);
+		    						coe16=parseFloat(document.getElementById("coemodu16").textContent);
+
+		    						document.getElementById("moyunité6").firstChild.nodeValue=((moymodu14+moymodu15+moymodu16)/(coe14+coe15+coe16)).toFixed(3);
+		    						
+		    						cre14=parseFloat(document.getElementById("cregrand14").textContent);
+		    						cre15=parseFloat(document.getElementById("cregrand15").textContent);
+		    						cre16=parseFloat(document.getElementById("cregrand16").textContent);
+		    						
+		    						document.getElementById("créunité6").firstChild.nodeValue=cre14+cre15+cre16;
+								}}}
+		crtot6=((moymodu14+moymodu15+moymodu16)/(coe14+coe15+coe16)).toFixed(3);
+		if(crtot6>=10) document.getElementById("créunité6").firstChild.nodeValue=cmodu14+cmodu15+cmodu16;
+		
+		affmoysem2();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu14");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu14=parseFloat(document.getElementById("cremodu14").textContent);
+		cobmod14=document.getElementById("cregrand14").firstChild.nodeValue=0;	
+		oui14=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu14").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu14=parseFloat(document.getElementById("cremodu14").textContent);
+		cobmod14=document.getElementById("cregrand14").firstChild.nodeValue="";
+
+		oui14=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy15 () {
+		tst=parseFloat(document.getElementById("moymodu15").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu15");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu15=parseFloat(document.getElementById("cremodu15").textContent);
+		cobmod15=document.getElementById("cregrand15").firstChild.nodeValue=0;
+		
+		oui15=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu15=parseFloat(document.getElementById("cremodu15").textContent);
+		cobmod15=document.getElementById("cregrand15").firstChild.nodeValue=cmodu15;
+		}
+		
+		if(tst<10){
+		cmodu15=parseFloat(document.getElementById("cremodu15").textContent);
+		cobmod15=document.getElementById("cregrand15").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu15");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu15=document.getElementById("coemodu15").textContent;
+		moymodu15=parseFloat(mmodu15)*tst;
+
+		oui15=1;
+		
+		if(oui14==1)
+					{if(oui15==1){
+								if(oui16==1){
+								
+									coe14=parseFloat(document.getElementById("coemodu14").textContent);
+		    						coe15=parseFloat(document.getElementById("coemodu15").textContent);
+		    						coe16=parseFloat(document.getElementById("coemodu16").textContent);
+
+		    						document.getElementById("moyunité6").firstChild.nodeValue=((moymodu14+moymodu15+moymodu16)/(coe14+coe15+coe16)).toFixed(3);
+		    						
+		    						cre14=parseFloat(document.getElementById("cregrand14").textContent);
+		    						cre15=parseFloat(document.getElementById("cregrand15").textContent);
+		    						cre16=parseFloat(document.getElementById("cregrand16").textContent);
+		    						
+		    						document.getElementById("créunité6").firstChild.nodeValue=cre14+cre15+cre16;
+								}}}
+		crtot6=((moymodu14+moymodu15+moymodu16)/(coe14+coe15+coe16)).toFixed(3);
+		if(crtot6>=10) document.getElementById("créunité6").firstChild.nodeValue=cmodu14+cmodu15+cmodu16;
+		
+		affmoysem2();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu15");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu15=parseFloat(document.getElementById("cremodu15").textContent);
+		cobmod15=document.getElementById("cregrand15").firstChild.nodeValue=0;	
+		oui15=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu15").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu15=parseFloat(document.getElementById("cremodu15").textContent);
+		cobmod15=document.getElementById("cregrand15").firstChild.nodeValue="";
+
+		oui15=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+				
+		function testmoy16 () {
+		tst=parseFloat(document.getElementById("moymodu16").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu16");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu16=parseFloat(document.getElementById("cremodu16").textContent);
+		cobmod16=document.getElementById("cregrand16").firstChild.nodeValue=0;
+		
+		oui16=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu16=parseFloat(document.getElementById("cremodu16").textContent);
+		cobmod16=document.getElementById("cregrand16").firstChild.nodeValue=cmodu16;
+		}
+		
+		if(tst<10){
+		cmodu16=parseFloat(document.getElementById("cremodu16").textContent);
+		cobmod16=document.getElementById("cregrand16").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu16");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu16=document.getElementById("coemodu16").textContent;
+		moymodu16=parseFloat(mmodu16)*tst;
+
+		oui16=1;
+		
+		if(oui14==1)
+					{if(oui15==1){
+								if(oui16==1){
+								
+									coe14=parseFloat(document.getElementById("coemodu14").textContent);
+		    						coe15=parseFloat(document.getElementById("coemodu15").textContent);
+		    						coe16=parseFloat(document.getElementById("coemodu16").textContent);
+
+		    						document.getElementById("moyunité6").firstChild.nodeValue=((moymodu14+moymodu15+moymodu16)/(coe14+coe15+coe16)).toFixed(3);
+		    						
+		    						cre14=parseFloat(document.getElementById("cregrand14").textContent);
+		    						cre15=parseFloat(document.getElementById("cregrand15").textContent);
+		    						cre16=parseFloat(document.getElementById("cregrand16").textContent);
+		    						
+		    						document.getElementById("créunité6").firstChild.nodeValue=cre14+cre15+cre16;
+								}}}
+		crtot6=((moymodu14+moymodu15+moymodu16)/(coe14+coe15+coe16)).toFixed(3);
+		if(crtot6>=10) document.getElementById("créunité6").firstChild.nodeValue=cmodu14+cmodu15+cmodu16;
+		
+		affmoysem2();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu16");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu16=parseFloat(document.getElementById("cremodu16").textContent);
+		cobmod16=document.getElementById("cregrand16").firstChild.nodeValue=0;	
+		oui16=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu16").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu16=parseFloat(document.getElementById("cremodu16").textContent);
+		cobmod16=document.getElementById("cregrand16").firstChild.nodeValue="";
+
+		oui16=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité6").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy18 () {
+		tst=parseFloat(document.getElementById("moymodu18").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu18");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu18=parseFloat(document.getElementById("cremodu18").textContent);
+		cobmod18=document.getElementById("cregrand18").firstChild.nodeValue=0;
+		
+		oui18=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité7").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité7").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu18=parseFloat(document.getElementById("cremodu18").textContent);
+		cobmod18=document.getElementById("cregrand18").firstChild.nodeValue=cmodu18;
+		}
+		
+		if(tst<10){
+		cmodu18=parseFloat(document.getElementById("cremodu18").textContent);
+		cobmod18=document.getElementById("cregrand18").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu18");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu18=document.getElementById("coemodu18").textContent;
+		moymodu18=parseFloat(mmodu18)*tst;
+
+		oui18=1;
+
+		if(oui18==1){
+						coe18=parseFloat(document.getElementById("coemodu18").textContent);
+		    			document.getElementById("moyunité7").firstChild.nodeValue=((moymodu18)/(coe18)).toFixed(3);
+		    						
+		    			cre18=parseFloat(document.getElementById("cregrand18").textContent);
+		    			document.getElementById("créunité7").firstChild.nodeValue=cre18;
+					}
+		crtot7=((moymodu18)/(coe18)).toFixed(3);
+		if(crtot7>=10) document.getElementById("créunité7").firstChild.nodeValue=cmodu18;
+		
+		affmoysem2();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu18");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu18=parseFloat(document.getElementById("cremodu18").textContent);
+		cobmod18=document.getElementById("cregrand18").firstChild.nodeValue=0;	
+		oui18=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité7").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité7").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu18").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu18=parseFloat(document.getElementById("cremodu18").textContent);
+		cobmod18=document.getElementById("cregrand18").firstChild.nodeValue="";
+
+		oui18=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité7").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité7").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+		
+		function testmoy19 () {
+		tst=parseFloat(document.getElementById("moymodu19").value);
+		if(tst>20 || tst<0){
+		var elmt = document.getElementById("moymodu19");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #FF0000";
+		
+		cmodu19=parseFloat(document.getElementById("cremodu19").textContent);
+		cobmod19=document.getElementById("cregrand19").firstChild.nodeValue=0;
+		
+		oui19=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité8").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité8").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}	
+		
+		if(tst<=20 && tst>=10){
+        cmodu19=parseFloat(document.getElementById("cremodu19").textContent);
+		cobmod19=document.getElementById("cregrand19").firstChild.nodeValue=cmodu19;
+		}
+		
+		if(tst<10){
+		cmodu19=parseFloat(document.getElementById("cremodu19").textContent);
+		cobmod19=document.getElementById("cregrand19").firstChild.nodeValue=0;	
+		}
+		
+		if(tst<=20 && tst>=0){
+		var elmt = document.getElementById("moymodu19");
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		mmodu19=document.getElementById("coemodu19").textContent;
+		moymodu19=parseFloat(mmodu19)*tst;
+
+		oui19=1;
+		
+		if(oui19==1)
+					{
+									coe19=parseFloat(document.getElementById("coemodu19").textContent);
+		    						
+		    						document.getElementById("moyunité8").firstChild.nodeValue=((moymodu19)/(coe19)).toFixed(3);
+		    						
+		    						cre19=parseFloat(document.getElementById("cregrand19").textContent);
+		    						
+		    						document.getElementById("créunité8").firstChild.nodeValue=cre19;	
+								}
+		crtot8=((moymodu19)/(coe19)).toFixed(3);
+		if(crtot8>=10) document.getElementById("créunité8").firstChild.nodeValue=cmodu19;
+		
+		affmoysem2();
+		moytot();
+		}	
+		if(isNaN(tst)){
+		var elmt = document.getElementById("moymodu19");
+		elmt.style.backgroundColor = "red";
+		elmt.style.border = "thick solid #ff0000";
+		
+        cmodu19=parseFloat(document.getElementById("cremodu19").textContent);
+		cobmod19=document.getElementById("cregrand19").firstChild.nodeValue=0;	
+		oui19=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité8").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité8").firstChild.nodeValue="Saisir vos notes S.V.P";
+		
+		}
+		
+		if(document.getElementById("moymodu19").value=="") {
+		elmt.style.backgroundColor = "white";
+		elmt.style.border = "thick solid #ffffff";
+		
+		cmodu19=parseFloat(document.getElementById("cremodu19").textContent);
+		cobmod19=document.getElementById("cregrand19").firstChild.nodeValue="";
+
+		oui19=0;
+		
+		document.getElementById("affmoysem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcresem2").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("moyunité8").firstChild.nodeValue="Saisir vos notes S.V.P";
+		document.getElementById("créunité8").firstChild.nodeValue="Saisir vos notes S.V.P";
+			
+		}
+		}
+			
+		function affmoysem2 () {
+			
+			if(oui11==1 && oui12==1 && oui13==1 && oui14==1 && oui15==1 && oui16==1 && oui18==1 && oui19==1){
+			
+			coe11=parseFloat(document.getElementById("coemodu11").textContent);
+		    coe12=parseFloat(document.getElementById("coemodu12").textContent);
+		    coe13=parseFloat(document.getElementById("coemodu13").textContent);
+		    coe14=parseFloat(document.getElementById("coemodu14").textContent);
+		    coe15=parseFloat(document.getElementById("coemodu15").textContent);
+		    coe16=parseFloat(document.getElementById("coemodu16").textContent);
+		    
+		    coe18=parseFloat(document.getElementById("coemodu18").textContent);
+		    coe19=parseFloat(document.getElementById("coemodu19").textContent);
+
+		    
+			coegenerale=coe11+coe12+coe13+coe14+coe15+coe16+coe18+coe19;
+			
+			moyennesem2=Math.round(moymodu11+moymodu12+moymodu13+moymodu14+moymodu15+moymodu16+moymodu18+moymodu19)/coegenerale;
+
+		    stl=document.getElementById("affmoysem2");
+			
+			document.getElementById("affmoysem2").firstChild.nodeValue=moyennesem2.toFixed(3);
+			
+			if(moyennesem2>=10) document.getElementById("valcresem2").firstChild.nodeValue=30;
+
+			else{
+				creobgenerale=cobmod11+cobmod12+cobmod13+cobmod14+cobmod15+cobmod16+cobmod18+cobmod19;
+				document.getElementById("valcresem2").firstChild.nodeValue=creobgenerale;
+			}
+			
+		} 
+		
+		}
+		
+		function moytot () {
+			if(!isNaN(document.getElementById("affmoysem1").textContent)&&(!isNaN(document.getElementById("affmoysem2").textContent))){
+				moyt=parseFloat(document.getElementById("affmoysem1").textContent)+parseFloat(document.getElementById("affmoysem2").textContent);
+				document.getElementById("valmoytot").firstChild.nodeValue=(moyt/2).toFixed(3);
+				
+				cretot=parseFloat(document.getElementById("valcresem1").textContent)+parseFloat(document.getElementById("valcresem2").textContent);
+				document.getElementById("valcretot").firstChild.nodeValue=cretot;
+				
+			}
+			else {
+				document.getElementById("valmoytot").firstChild.nodeValue="Saisir vos notes S.V.P";
+			    document.getElementById("valcretot").firstChild.nodeValue="Saisir vos notes S.V.P";
+			    }
+			if(parseFloat(document.getElementById("valmoytot").textContent)>=10) 
+			{
+				document.getElementById("valcretot").firstChild.nodeValue=60;
+				document.getElementById("observation").firstChild.nodeValue="Décision:admis";
+				
+				document.getElementById("modudett").firstChild.nodeValue="il n'y a pas!!";
+
+			}
+			
+			if(parseFloat(document.getElementById("valmoytot").textContent)<10){
+				if(parseFloat(document.getElementById("valcretot").textContent)>=30){
+					if((parseFloat(document.getElementById("valcresem1").textContent)>=10)&&(parseFloat(document.getElementById("valcresem2").textContent)>=10))
+					
+					{
+					document.getElementById("observation").firstChild.nodeValue="Décision:Endetté";
+					
+					moyuni1=parseFloat(document.getElementById("moyunité1").firstChild.textContent);
+					moyuni2=parseFloat(document.getElementById("moyunité2").firstChild.textContent);
+					moyuni3=parseFloat(document.getElementById("moyunité3").firstChild.textContent);
+					moyuni4=parseFloat(document.getElementById("moyunité4").firstChild.textContent);
+					moyuni5=parseFloat(document.getElementById("moyunité5").firstChild.textContent);
+					moyuni6=parseFloat(document.getElementById("moyunité6").firstChild.textContent);
+					moyuni7=parseFloat(document.getElementById("moyunité7").firstChild.textContent);
+					moyuni8=parseFloat(document.getElementById("moyunité8").firstChild.textContent);
+					
+					moym1=parseFloat(document.getElementById("moymodu1").value);
+					moym2=parseFloat(document.getElementById("moymodu2").value);
+					moym3=parseFloat(document.getElementById("moymodu3").value);
+					moym4=parseFloat(document.getElementById("moymodu4").value);
+					moym5=parseFloat(document.getElementById("moymodu5").value);
+					moym6=parseFloat(document.getElementById("moymodu6").value);
+
+					moym8=parseFloat(document.getElementById("moymodu8").value);
+					moym9=parseFloat(document.getElementById("moymodu9").value);
+
+					moym11=parseFloat(document.getElementById("moymodu11").value);
+					moym12=parseFloat(document.getElementById("moymodu12").value);
+					moym13=parseFloat(document.getElementById("moymodu13").value);
+					moym14=parseFloat(document.getElementById("moymodu14").value);
+					moym15=parseFloat(document.getElementById("moymodu15").value);
+					moym16=parseFloat(document.getElementById("moymodu16").value);
+
+					moym18=parseFloat(document.getElementById("moymodu18").value);
+					moym19=parseFloat(document.getElementById("moymodu19").value);
+
+
+					
+						moydette="Modules en dettes:";
+
+
+						if(moyuni1<10){	
+							if(moym1<10) {moydette=moydette+document.getElementById("module1").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							if(moym2<10) {moydette=moydette+document.getElementById("module2").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							if(moym3<10) {moydette=moydette+document.getElementById("module3").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+						}
+						
+						if(moyuni2<10){
+							if(moym4<10) {moydette=moydette+document.getElementById("module4").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							if(moym5<10) {moydette=moydette+document.getElementById("module5").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							if(moym6<10) {moydette=moydette+document.getElementById("module6").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							
+						}
+						
+						if(moyuni3<10){
+							if(moym8<10) {moydette=moydette+document.getElementById("module8").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+
+						}
+						if(moyuni4<10){
+							if(moym9<10) {moydette=moydette+document.getElementById("module9").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							
+						}
+						
+						if(moyuni5<10){
+							
+							if(moym11<10) {moydette=moydette+document.getElementById("module11").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							if(moym12<10) {moydette=moydette+document.getElementById("module12").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							if(moym13<10) {moydette=moydette+document.getElementById("module13").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+						
+						}
+						if(moyuni6<10){
+							
+							if(moym14<10) {moydette=moydette+document.getElementById("module14").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							if(moym15<10) {moydette=moydette+document.getElementById("module15").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+							if(moym16<10) {moydette=moydette+document.getElementById("module16").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+						
+						
+						}
+						
+						if(moyuni7<10){
+
+							if(moym18<10) {moydette=moydette+document.getElementById("module18").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+					
+						}
+						
+						if(moyuni8<10){
+
+							if(moym19<10) {moydette=moydette+document.getElementById("module19").textContent+" ";document.getElementById("modudett").firstChild.nodeValue=moydette;}
+						
+						}
+
+					
+					}
+					
+					else{
+						document.getElementById("observation").firstChild.nodeValue="Décision:Ajourné";
+						document.getElementById("modudett").firstChild.nodeValue="Ajourné";}
+					
+				}
+				else {	document.getElementById("observation").firstChild.nodeValue="Décision:Ajourné";
+						document.getElementById("modudett").firstChild.nodeValue="Ajourné";}
+			}
+		}
+
+     	</script>
+     	
+     </body>
+     <footer>
+     </br></br>© 2014-2015 FACULTÉ DES SCIENCES.
+</html>
+	
